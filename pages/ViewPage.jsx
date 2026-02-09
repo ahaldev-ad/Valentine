@@ -1,18 +1,17 @@
-
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { GoldButton, GoldInput, GoldCard } from '../components/UI';
-import { decryptMessage, hashPassword } from '../lib/crypto';
-import { db } from '../lib/firebase';
+import { GoldButton, GoldInput, GoldCard } from '../components/UI.jsx';
+import { decryptMessage, hashPassword } from '../lib/crypto.js';
+import { db } from '../lib/firebase.js';
 import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-const ViewPage: React.FC = () => {
+const ViewPage = () => {
   const { messageId } = useParams();
   const navigate = useNavigate();
   
   const [password, setPassword] = useState('');
-  const [decryptedMessage, setDecryptedMessage] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [decryptedMessage, setDecryptedMessage] = useState(null);
+  const [error, setError] = useState(null);
   const [isUnlocking, setIsUnlocking] = useState(false);
 
   const handleUnlock = async () => {

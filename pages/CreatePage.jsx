@@ -1,12 +1,11 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { GoldButton, GoldInput, GoldCard } from '../components/UI';
-import { encryptMessage, hashPassword } from '../lib/crypto';
-import { db } from '../lib/firebase';
+import { GoldButton, GoldInput, GoldCard } from '../components/UI.jsx';
+import { encryptMessage, hashPassword } from '../lib/crypto.js';
+import { db } from '../lib/firebase.js';
 import { collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-const CreatePage: React.FC = () => {
+const CreatePage = () => {
   const [message, setMessage] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);

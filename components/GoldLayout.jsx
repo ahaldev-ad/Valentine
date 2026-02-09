@@ -1,11 +1,7 @@
 
-import React, { ReactNode } from 'react';
+import React from 'react';
 
-interface GoldLayoutProps {
-  children: ReactNode;
-}
-
-const GoldLayout: React.FC<GoldLayoutProps> = ({ children }) => {
+const GoldLayout = ({ children }) => {
   return (
     <div className="min-h-screen relative flex flex-col items-center justify-center p-4 md:p-8 overflow-hidden bg-[#fdfbf7]">
       {/* Moving Golden Gradient Background */}

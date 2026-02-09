@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import CreatePage from './pages/CreatePage';
-import SharePage from './pages/SharePage';
-import ViewPage from './pages/ViewPage';
-import GoldLayout from './components/GoldLayout';
+import CreatePage from './pages/CreatePage.jsx';
+import SharePage from './pages/SharePage.jsx';
+import ViewPage from './pages/ViewPage.jsx';
+import GoldLayout from './components/GoldLayout.jsx';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <HashRouter>
       <GoldLayout>

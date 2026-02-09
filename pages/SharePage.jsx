@@ -1,9 +1,8 @@
-
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { GoldButton, GoldCard } from '../components/UI';
+import { GoldButton, GoldCard } from '../components/UI.jsx';
 
-const SharePage: React.FC = () => {
+const SharePage = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [copied, setCopied] = useState(false);
