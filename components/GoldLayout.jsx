@@ -30,8 +30,9 @@ const GoldLayout = ({ children }) => {
         
         {children}
 
-        <footer className="mt-12 text-center text-[#b8a06e] text-[9px] font-medium tracking-[0.5em] uppercase">
-          Forged in the heart of winter • 2025
+        <footer className="mt-12 text-center text-[#b8a06e] text-[9px] font-medium tracking-[0.5em] uppercase flex flex-col items-center gap-2">
+          <span>To love, To be loved, Spread love</span>
+          <span className="opacity-60 text-[8px] tracking-[0.3em]">Created by SASU & AD</span>
         </footer>
       </main>
 
