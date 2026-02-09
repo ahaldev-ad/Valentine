@@ -53,10 +53,11 @@ const SharePage = () => {
           </GoldButton>
           
           <div className="bg-[#fdfbf7] border border-[#e5dcc3] p-6 rounded-2xl">
-             <p className="text-[#8b6b00] text-[10px] leading-relaxed text-center font-medium tracking-wide">
+             <div className="text-[#8b6b00] text-[10px] leading-relaxed text-center font-medium tracking-wide">
                <span className="block mb-2 uppercase tracking-[0.3em] text-[#d4af37] font-bold">Privacy Protocol</span>
-               Share this link and your chosen password separately. The vault requires both to reveal your heart.<br>End-To-End Encrypted
-             </p>
+               <span className="block mb-2 text-[#b8860b] font-bold uppercase tracking-[0.15em] text-[8px]">End-To-End Encrypted</span>
+               <p>Share this link and your chosen password separately. The vault requires both to reveal your heart.</p>
+             </div>
           </div>
         </div>
 
